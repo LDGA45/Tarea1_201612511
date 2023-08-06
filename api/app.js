@@ -13,5 +13,10 @@ app.post('/sumar', (req, res) => {
 
 // Ruta para mostrar el carnet (método GET)
 app.get('/carnet', (req, res) => {
-  res.send('carnet: 201612511');
-});
+    res.send('carnet: 201612511');
+  });
+
+  // Iniciar el servidor
+app.listen(port, () => {
+    console.log(`Servidor escuchando en http://localhost:${port}`);
+  });
